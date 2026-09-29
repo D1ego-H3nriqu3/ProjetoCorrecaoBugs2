@@ -60,8 +60,9 @@ function removerMusica() {
 }
 
 let opcao;
+let playlist = [];
 do {
-  const playlist = [];
+  
   exibirMenu();
   opcao = prompt("Escolha uma opção: ");
 
