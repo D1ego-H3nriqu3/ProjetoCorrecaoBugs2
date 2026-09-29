@@ -55,7 +55,7 @@ function removerMusica() {
     return;
   }
 
-  playlist.splice(indice);
+  playlist.splice(indice,1);
   console.log("Música removida!");
 }
 
