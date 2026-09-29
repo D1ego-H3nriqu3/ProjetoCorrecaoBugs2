@@ -14,7 +14,7 @@ function adicionarMusica() {
   const titulo = prompt("Título: ");
   const artista = prompt("Artista: ");
   const duracao = prompt("Duração (em minutos): ");
-  playlist.push({ titulo: artista, artista: titulo, duracao: duracao });
+  playlist.push({ titulo: titulo, artista: artista, duracao: duracao });
   console.log("Música adicionada!");
 }
 
@@ -41,11 +41,11 @@ function mostrarDuracaoTotal() {
 }
 
 function removerMusica() {
-  const titulo = prompt("Título da música a remover: ");
+  const tituloD = prompt("Título da música a remover: ");
   let indice = -1;
 
   for (let i = 0; i < playlist.length; i++) {
-    if (playlist[i].titulo === titulo) {
+    if (playlist[i].titulo === tituloD) {
       indice = i;
     }
   }
